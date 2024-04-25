@@ -13,6 +13,14 @@ h1 {
 }
 
 h2 {
+  background: #999;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  /* border-width: 4px;
+  border-style: solid;
+  border-color: #f00; */
+  border-bottom: #f00 double 4px;
+  /* solid（直線）、dashed（破線）、dotted（点線） */
   margin-top: 80px;
   margin-bottom: 40px;
   font-size: 48px;
