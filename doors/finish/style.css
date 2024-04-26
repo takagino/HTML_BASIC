@@ -22,7 +22,7 @@ h2 {
   font-size: 24px;
   font-weight: normal;
   font-family: 'Times New Roman', Times, serif;
-  line-height: 1.5em;
+  line-height: 1.5;
   letter-spacing: 0.05em;
 }
 
@@ -38,14 +38,15 @@ li {
   color: #000;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 p {
   color: #000;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-  line-height: 1.5em;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .voice {
