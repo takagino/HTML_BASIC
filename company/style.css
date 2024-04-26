@@ -8,10 +8,29 @@ body {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0;
+  text-align: center;
 }
 
 .wrapper{
   width: 750px;
   margin-left: auto;
   margin-right: auto;
+}
+
+h1{
+  margin: 50px 0 70px;
+  line-height: 1;
+}
+
+h2{
+  color:#27DEBF;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.lead{
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
 }
