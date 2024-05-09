@@ -59,8 +59,21 @@ a{
   text-align: left;
 }
 
+.graphics a{
+  color: #fff;
+}
+
 .developement{
   padding: 40px;
   background: #fff;
   text-align: left;
+}
+
+.info dt{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info dd{
+  margin-left: 0;
 }
