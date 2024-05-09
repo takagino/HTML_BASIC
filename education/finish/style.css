@@ -37,32 +37,32 @@ h3 {
   font-size: 20px;
 }
 
-.post h3 {
-  font-size: 18px;
-}
-
-.news {
+.news .post {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px dashed #898989;
 }
 
 .category {
-  margin: 40px 0 20px;
+  margin-bottom: 20px;
   color: #E5916B;
   font-size: 12px;
   font-weight: bold;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.date {
+.time {
   margin: 30px 0 0;
   font-style: italic;
 }
 
-.post {
+.trending .post{
   margin-bottom: 40px;
   background-color: #F6F6F6;
+}
+
+.trending h3 {
+  font-size: 18px;
 }
 
 .text {
