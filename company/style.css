@@ -38,6 +38,12 @@ h3{
   line-height: 1.5;
 }
 
+a{
+  color: #151d41;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .lead {
   margin: 20px 0 50px;
   font-size: 32px;
