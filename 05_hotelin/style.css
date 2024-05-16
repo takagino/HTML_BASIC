@@ -26,9 +26,15 @@ h2{
 }
 
 footer{
+  min-width: 900px; /* 背景色が消えちゃう問題を解決する*/
+  padding: 60px 0;
   background: #000;
   color: #fff;
   text-align: right;
+}
+
+footer p{
+  margin: 0;
 }
 
 .inner{
@@ -43,9 +49,11 @@ footer{
 
 .rooms{
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .rooms ul{
+  margin-top: 60px;
   padding-left: 0;
   list-style-type: none;
 }
@@ -55,6 +63,7 @@ footer{
   padding: 2px 0 2px 36px;
   background-image: url(./images/ico_check.png);
   background-repeat: no-repeat;
+  text-align: left;
 }
 
 .testimonials{
