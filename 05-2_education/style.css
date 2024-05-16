@@ -14,3 +14,11 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+footer{
+  background-color: #000;
+}
+
+.news{
+  background-color: #FFFBEB;
+}
