@@ -59,4 +59,13 @@ footer{
 
 .testimonials{
   margin-bottom: 100px;
+  padding: 50px;
+  text-align: center;
+  background: #fff;
+}
+
+.voice{
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-style: italic;
 }
