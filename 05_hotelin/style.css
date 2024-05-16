@@ -18,6 +18,13 @@ h1{
   line-height: 1;
 }
 
+h2{
+  margin: 0 0 40px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
 footer{
   background: #000;
   color: #fff;
@@ -36,6 +43,18 @@ footer{
 
 .rooms{
   margin-bottom: 100px;
+}
+
+.rooms ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.rooms li{
+  margin-bottom: 15px;
+  padding: 2px 0 2px 36px;
+  background-image: url(./images/ico_check.png);
+  background-repeat: no-repeat;
 }
 
 .testimonials{
