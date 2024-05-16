@@ -61,7 +61,11 @@ footer{
   margin-bottom: 100px;
   padding: 50px;
   text-align: center;
-  background: #fff;
+  /*
+  background-image: url(./images/bg_logo.png);
+  background-repeat: no-repeat;
+  background-position: right 35px bottom 35px; */
+  background: #fff url(./images/bg_logo.png) no-repeat right 35px bottom 35px;
 }
 
 .voice{
