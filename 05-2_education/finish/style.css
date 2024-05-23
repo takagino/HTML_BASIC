@@ -58,12 +58,12 @@ footer {
 
 .news {
   min-width: 750px;
-  padding: 50px 0 10px;
+  padding: 50px 0;
   background-color: #fffbeb;
 }
 
 .news .post {
-  margin-bottom: 40px;
+  margin-top: 40px;
   padding-bottom: 40px;
   border-bottom: 1px dashed #898989;
 }
