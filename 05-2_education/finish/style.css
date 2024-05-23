@@ -84,11 +84,11 @@ footer {
 }
 
 .trending {
-  padding: 60px 0 20px;
+  padding: 60px 0;
 }
 
 .trending .post {
-  margin-bottom: 40px;
+  margin-top: 40px;
   background-color: #f6f6f6;
 }
 
