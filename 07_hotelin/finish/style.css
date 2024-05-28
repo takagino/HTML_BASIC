@@ -8,20 +8,25 @@ body {
   letter-spacing: 0;
 }
 
-h2 {
-  margin-bottom: 40px;
-  font-size: 24px;
-  letter-spacing: 0.2em;
-}
-
-h2 span {
-  color: #f00;
+img{
+  vertical-align: bottom;
 }
 
 .inner {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+h2 span {
+  color: #f00;
 }
 
 /* header */
@@ -32,9 +37,11 @@ header {
 /*main */
 .message {
   min-width: 900px;
+  margin-bottom: 60px;
   padding: 155px 0;
   background: url(./images/bg_mv.png) no-repeat center center / cover;
   color: #fff;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 0.2em;
 }
@@ -42,14 +49,12 @@ header {
 .message dt {
   margin-bottom: 20px;
   font-size: 48px;
-  font-weight: bold;
   line-height: 1.1;
 }
 
 .message dd {
   margin-bottom: 60px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .message a {
@@ -57,25 +62,17 @@ header {
   padding: 22px 48px;
   background-color: #f00;
   color: #fff;
-  font-weight: bold;
   text-decoration: none;
 }
 
-.rooms {
-  margin: 60px auto;
+.rooms{
+  margin-bottom: 60px;
   text-align: center;
 }
 
-.rooms img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .rooms ul {
-  margin: 60px 0 0;
-  padding-left: 0;
+  margin-top: 60px;
   text-align: left;
-  list-style: none;
 }
 
 .rooms li {
@@ -96,20 +93,21 @@ header {
   background: #fff url(./images/bg_logo.png) no-repeat right 37px bottom 33px;
 }
 
-.testimonials img {
-  margin: 0 auto 36px;
-}
-
 .testimonials dt {
-  margin-bottom: 50px;
+  margin: 35px 0 50px;
   font-size: 18px;
   font-style: italic;
 }
 
 /* footer */
 footer {
+  min-width: 900px;
   padding: 60px 0;
   background-color: #000;
-  text-align: right;
   color: #fff;
+  text-align: right;
+}
+
+footer small{
+  font-size: 14px;
 }
