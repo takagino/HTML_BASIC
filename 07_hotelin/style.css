@@ -25,8 +25,15 @@ header{
 
 /* about */
 .about{
+  min-width: 900px;
   padding: 155px 0;
   color: #fff;
   text-align: center;
-  background: url(./images/bg_mv.png) no-repeat center center;
+  background: url(./images/bg_mv.png) center center/cover no-repeat;
+}
+
+/* testimonials */
+.testimonials{
+  min-width: 900px;
+  background: url(./images/bg_testimonials.png) no-repeat center center/cover;
 }
