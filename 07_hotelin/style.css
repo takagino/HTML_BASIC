@@ -75,6 +75,23 @@ header {
   background-color: #f00;
 }
 
+/* rooms */
+.rooms {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.rooms ul {
+  margin-top: 60px;
+  text-align: left;
+}
+
+.rooms li {
+  margin-top: 15px;
+  padding: 2px 0 2px 36px;
+  background: url(./images/ico_check.png) no-repeat left center;
+}
+
 /* testimonials */
 .testimonials {
   min-width: 900px;
