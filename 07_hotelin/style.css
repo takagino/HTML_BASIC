@@ -1,59 +1,72 @@
 @charset "utf-8";
 
-body{
+body {
   color: #000;
   font-size: 14px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   letter-spacing: 0;
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-h2{
+h2 {
   margin-bottom: 40px;
   font-size: 24px;
   font-weight: bold;
+  line-height: 1.1;
   letter-spacing: 0.2em;
   text-align: center;
 }
 
-h2 span{
+h2 span {
   color: #f00;
 }
 
-em{
+em {
   font-style: italic;
 }
 
-strong{
+strong {
   font-weight: bold;
 }
 
-.inner{
+.inner {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* header */
-header{
-  margin:  50px 0;
+header {
+  margin: 50px 0;
 }
 
 /* about */
-.about{
+.about {
   min-width: 900px;
   margin-bottom: 60px;
   padding: 155px 0;
   color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.2em;
   text-align: center;
   background: url(./images/bg_mv.png) center center/cover no-repeat;
 }
 
-.about a{
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.about p {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+.about a {
   display: block;
   width: 200px;
   margin-left: auto;
@@ -63,7 +76,7 @@ header{
 }
 
 /* testimonials */
-.testimonials{
+.testimonials {
   min-width: 900px;
   background: url(./images/bg_testimonials.png) no-repeat center center/cover;
 }
