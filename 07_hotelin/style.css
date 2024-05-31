@@ -95,5 +95,18 @@ header {
 /* testimonials */
 .testimonials {
   min-width: 900px;
+  padding: 80px 0;
   background: url(./images/bg_testimonials.png) no-repeat center center/cover;
+}
+
+.testimonials .inner {
+  padding: 50px;
+  background: #fff url(./images/bg_logo.png) no-repeat right 37px bottom 33px;
+  text-align: center;
+}
+
+.testimonials dt {
+  margin: 35px 0 50px;
+  font-size: 18px;
+  font-style: italic;
 }
