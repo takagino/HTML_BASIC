@@ -19,12 +19,17 @@ img{
 }
 
 /* header */
+header{
+  background-color: #0864B1;
+}
+
 header ul{
   display: flex;
 }
 
 .top{
   display: flex;
+  justify-content: space-between;
 }
 
 /* news */
@@ -35,4 +40,11 @@ header ul{
 
 .allnews{
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.news article{
+  width: 380px;
 }
