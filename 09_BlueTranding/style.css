@@ -55,3 +55,25 @@ header li{
 .news article{
   width: 380px;
 }
+
+/* footer */
+footer{
+  padding: 60px 0;
+  background-color: #0864B1;
+  color: #fff;
+  text-align: center;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+footer li{
+  margin: 0 5px;
+}
+
+footer small{
+  font-size: 12px;
+}
