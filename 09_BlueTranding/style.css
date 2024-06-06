@@ -18,8 +18,21 @@ img{
   margin-right: auto;
 }
 
+/* header */
+header ul{
+  display: flex;
+}
+
+.top{
+  display: flex;
+}
+
 /* news */
 .news{
   margin-top: 80px;
   margin-bottom: 100px;
+}
+
+.allnews{
+  display: flex;
 }
