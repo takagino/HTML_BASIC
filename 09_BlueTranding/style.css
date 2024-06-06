@@ -20,16 +20,23 @@ img{
 
 /* header */
 header{
+  padding: 40px 0 80px;
   background-color: #0864B1;
+  color: #fff;
 }
 
 header ul{
   display: flex;
 }
 
+header li{
+  margin-left: 30px;
+}
+
 .top{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 /* news */
