@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body{
+  min-width: 800px; /* 背景色や背景画像が消える問題を解決 */
   color: #676767;
   font-size: 14px;
   font-family: 'Times New Roman', Times, serif;
@@ -20,9 +21,20 @@ img{
 
 /* header */
 header{
-  padding: 40px 0 80px;
   background-color: #0864B1;
   color: #fff;
+}
+
+header .inner{
+  padding: 40px 0 80px;
+  background: url(./images/bg_header.png) no-repeat right center;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
 header ul{
@@ -33,12 +45,6 @@ header li{
   margin-left: 30px;
 }
 
-.top{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 120px;
-}
-
 /* news */
 .news{
   margin-top: 80px;
@@ -47,8 +53,7 @@ header li{
 
 .allnews{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: wrap; /* 折り返したい場合、幅を決めたい場合 */
   justify-content: space-between;
 }
 
