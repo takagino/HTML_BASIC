@@ -96,10 +96,12 @@ header li{
   display: flex;
   flex-wrap: wrap; /* 折り返したい場合、幅を決めたい場合 */
   justify-content: space-between;
+  margin-bottom: -60px; /* ネガティブマージン */
 }
 
 .news article{
   width: 380px;
+  margin-bottom: 60px;
 }
 
 /* footer */
