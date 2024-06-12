@@ -14,22 +14,17 @@ img {
   vertical-align: bottom;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h2 {
-  margin-bottom: 35px;
+h2{
   color: #202124;
   font-size: 24px;
+  font-weight: bold;
 }
 
-h3 {
+h3{
   margin-bottom: 12px;
   color: #202124;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .inner {
@@ -39,25 +34,30 @@ h3 {
   margin-right: auto;
 }
 
-/* header {
-  text-align: center;
+.allpost{
+  margin-bottom: -45px;
 }
 
-h1 img {
-  display: inline-block;
-} */
+.allpost article{
+  margin-bottom: 45px;
+}
 
+.time{
+  margin-top: 20px;
+  padding-left: 26px;
+  font-size: 12px;
+  font-style: oblique;
+  background: url(./images/icon_time.png) no-repeat left center;
+}
+
+/* header */
 header {
   margin: 30px 0 80px;
 }
 
 h1 {
   margin-bottom: 20px;
-}
-
-h1 img {
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 header ul {
@@ -69,17 +69,16 @@ header li {
   margin: 0 10px;
 }
 
-header a {
-  color: #A6ADB4;
+header a{
   font-size: 12px;
   font-weight: bold;
-  text-decoration: none;
 }
 
-.current {
+header .active{
   color: #202124;
 }
 
+/* footer */
 footer {
   padding: 42px 0;
   background-color: #202124;
@@ -90,6 +89,7 @@ footer {
 footer ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -97,38 +97,37 @@ footer li {
   margin: 0 10px;
 }
 
-.morenews {
+footer small{
+  font-size: 12px;
+}
+
+/* news */
+.news {
   margin-bottom: 60px;
 }
 
-.morenews h2 {
+.news h2{
+  margin-bottom: 35px;
   padding-bottom: 30px;
-  border-bottom: 2px solid #EBEDED;
+  border-bottom: 1px solid #EBEDED;
 }
 
-.posts article {
-  margin-bottom: 45px;
-}
-
-.date {
-  margin-top: 20px;
-  padding-left: 26px;
-  font-size: 12px;
-  font-style: oblique;
-  background: url(./images/icon_time.png) no-repeat left center;
-}
-
-.trending {
-  padding: 60px 0 15px;
+/* trending */
+.trending{
+  padding: 60px 0;
   background-color: #F6F8F9;
 }
 
-.trending article {
+.trending h2{
+  margin-bottom: 40px;
+}
+
+.trending article{
   background-color: #fff;
 }
 
-.trending .content {
-  padding: 40px 35px 35px 35px;
+.trending .content{
+  padding: 40px 35px;
 }
 
 @media (min-width:640px) {
@@ -147,10 +146,14 @@ footer li {
     margin: 0 0 0 20px;
   }
 
-  .posts {
+  .allpost{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .allpost article{
+    width: 47.5%;
   }
 
   footer {
@@ -163,15 +166,11 @@ footer li {
     justify-content: space-between;
   }
 
-  .morenews {
-    margin-bottom: 15px;
+  footer ul {
+    margin-bottom: 0px;
   }
 
-  .morenews article {
-    width: 47.5%;
-  }
-
-  .trending article {
-    width: 47.5%;
+  footer li {
+    margin: 0 0 0 20px;
   }
 }
