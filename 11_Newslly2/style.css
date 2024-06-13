@@ -9,22 +9,15 @@ body{
   background-color: #fff;
 }
 
-@media (max-width:1001px){
-  body{
-    background-color: #00f;
-  }
-}
-
-@media (max-width:600px){
-  body{
-    background-color: #f00;
-  }
-}
-
 img{
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+h1{
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h2{
@@ -47,6 +40,39 @@ h3{
   margin-right: auto;
 }
 
+/* header */
+header{
+  padding: 30px 0 80px;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+}
+
+header li{
+  margin: 0 10px;
+}
+
 article{
   width: 47.5%;
+}
+
+
+/* PC表示（640px以上） */
+@media (min-width:640px){
+  h1{
+    margin-bottom: 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  header li{
+    margin: 0 0 0 20px;
+  }
 }
