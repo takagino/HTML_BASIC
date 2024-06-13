@@ -54,6 +54,15 @@ header li{
   margin: 0 10px;
 }
 
+header a{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header .active{
+  color: #202124;
+}
+
 article{
   width: 47.5%;
 }
