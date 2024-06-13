@@ -40,6 +40,22 @@ h3{
   margin-right: auto;
 }
 
+.time{
+  margin-top: 20px;
+  padding-left: 26px;
+  font-size: 12px;
+  font-style: oblique;
+  background: url(./images/icon_time.png) no-repeat left center;
+}
+
+.allpost{
+  margin-bottom: -45px;
+}
+
+.allpost article{
+  margin-bottom: 45px;
+}
+
 /* header */
 header{
   padding: 30px 0 80px;
@@ -63,10 +79,34 @@ header .active{
   color: #202124;
 }
 
-article{
-  width: 47.5%;
+/* news */
+.news{
+  margin-bottom: 60px;
 }
 
+.news h2{
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEDED;
+}
+
+/* trending */
+.trending{
+  padding: 60px 0;
+  background-color: #F6F8F9;
+}
+
+.trending h2{
+  margin-bottom: 40px;
+}
+
+.trending article{
+  background-color: #fff;
+}
+
+.trending .content{
+  padding: 40px 35px;
+}
 
 /* PC表示（640px以上） */
 @media (min-width:640px){
@@ -83,5 +123,15 @@ article{
 
   header li{
     margin: 0 0 0 20px;
+  }
+
+  .allpost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  article{
+    width: 47.5%;
   }
 }
