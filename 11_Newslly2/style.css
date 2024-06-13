@@ -108,6 +108,28 @@ header .active{
   padding: 40px 35px;
 }
 
+/* footer */
+footer{
+  padding: 42px 0;
+  text-align: center;
+  background-color: #202124;
+}
+
+footer ul{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+footer li{
+  margin: 0 10px;
+}
+
+footer small{
+  color: #fff;
+  font-size: 12px;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   h1{
