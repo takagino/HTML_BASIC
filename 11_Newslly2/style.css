@@ -156,4 +156,23 @@ footer small{
   article{
     width: 47.5%;
   }
+
+  footer{
+    padding-top: 102px;
+  }
+
+  footer .inner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer ul{
+    margin-bottom: 0;
+  }
+
+  footer li{
+    margin: 0 0 0 20px;
+  }
 }
