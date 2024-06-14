@@ -94,6 +94,10 @@ header a{
   text-align: center;
 }
 
+.news article{
+  margin-bottom: 60px;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   h1{
@@ -113,5 +117,16 @@ header a{
 
   .about h2{
     font-size: 42px;
+  }
+
+  .allpost{
+    margin-bottom: -60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .allpost article{
+    width: 47.5%;
   }
 }
