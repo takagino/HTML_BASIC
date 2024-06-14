@@ -26,3 +26,34 @@ header{
   background-color: #0864B1;
   color: #fff;
 }
+
+header .inner{
+  padding: 40px 0 80px;
+  background: url(./images/bg_header.png) no-repeat right center;
+}
+
+header .top{
+  text-align: center;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+}
+
+header li{
+  margin: 0 15px;
+}
+
+/* PC表示（640px以上） */
+@media (min-width:640px){
+  header .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header li{
+    margin: 0 0 0 30px;
+  }
+}
