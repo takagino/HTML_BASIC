@@ -78,6 +78,22 @@ header a{
   text-align: center;
 }
 
+/* news */
+.news{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.news h2{
+  margin-bottom: 40px;
+  color: #0864B1;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   h1{
