@@ -63,6 +63,16 @@ header li{
   font-size: 18px;
 }
 
+.about a{
+  display: block;
+  width: 240px;
+  padding: 20px;
+  background-color: #fff;
+  color: #0864B1;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   h1{
