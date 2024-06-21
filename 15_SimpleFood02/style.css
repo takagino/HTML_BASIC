@@ -50,6 +50,7 @@ footer small{
 /* menu */
 .menu article{
   display: flex;
+  align-items: flex-start;
 }
 
 /* PC表示（640px以上） */
