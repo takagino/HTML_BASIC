@@ -47,6 +47,11 @@ footer small{
   text-align: center;
 }
 
+/* menu */
+.menu article{
+  display: flex;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   .allpost{
