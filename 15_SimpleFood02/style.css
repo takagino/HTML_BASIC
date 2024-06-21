@@ -32,7 +32,16 @@ footer small{
 }
 
 /* news */
-
+.news a{
+  display: block;
+  width: 45%; /* 固定幅の場合は250px */
+  margin-left: auto;
+  padding: 20px;
+  background-color: #FFBF9D;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
 
 /* PC表示（640px以上） */
 @media (min-width:640px){
@@ -44,6 +53,10 @@ footer small{
 
   .news article{
     width: 31.25%;
+  }
+
+  .news a{
+    width: 100%;
   }
 
   .menu article{
