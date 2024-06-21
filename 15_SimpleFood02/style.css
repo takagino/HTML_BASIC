@@ -32,6 +32,10 @@ footer small{
 }
 
 /* news */
+.news p{
+  margin-bottom: 30px;
+}
+
 .news a{
   display: block;
   width: 45%; /* 固定幅の場合は250px */
@@ -53,10 +57,13 @@ footer small{
 
   .news article{
     width: 31.25%;
+    display: flex;
+    flex-direction: column;
   }
 
   .news a{
     width: 100%;
+    margin-top: auto;
   }
 
   .menu article{
