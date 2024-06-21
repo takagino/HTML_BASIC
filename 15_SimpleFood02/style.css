@@ -32,3 +32,21 @@ footer small{
 }
 
 /* news */
+
+
+/* PC表示（640px以上） */
+@media (min-width:640px){
+  .allpost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .news article{
+    width: 31.25%;
+  }
+
+  .menu article{
+    width: 48.75%;
+  }
+}
