@@ -105,6 +105,12 @@ footer small{
 .item dd{
   padding: 5px 0;
   flex: 1; /* パターンとして覚える */
+  word-break: break-all; /* 単語の途中で改行する */
+}
+
+/* 専用のクラス名を追加するのもあり */
+.word-break{
+  word-break: break-all;
 }
 
 /* PC表示（640px以上） */
