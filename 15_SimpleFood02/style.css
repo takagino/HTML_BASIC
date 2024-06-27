@@ -104,4 +104,21 @@ footer small{
   .menu article{
     width: 48.75%;
   }
+
+  .newsletter .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsletter .text{
+    width: 62%;
+    /* margin-right: 3.625%; */
+    padding-right: 3.625%;
+    border-right: 1px solid #707070;
+  }
+
+  .newsletter dl{
+    width: 34.375%;
+  }
 }
