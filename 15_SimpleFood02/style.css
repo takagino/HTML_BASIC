@@ -80,6 +80,17 @@ footer small{
   background-color: #FDF5ED;
 }
 
+.item{
+  display: flex;
+  font-size: 13px;
+}
+
+.item dt{
+  padding: 5px 0;
+  background-color: #303030;
+  color: #fff;
+}
+
 /* PC表示（640px以上） */
 @media (min-width:640px){
   .allpost{
