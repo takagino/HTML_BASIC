@@ -43,6 +43,7 @@ header h1{
 
 header nav{
   flex: 1;
+  margin-left: 40px
 }
 
 header ul{
@@ -50,11 +51,12 @@ header ul{
 }
 
 header li{
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .contact{
   margin-left: auto;
+  margin-right: 0;
 }
 
 /* footer */
@@ -95,10 +97,11 @@ footer small{
 .menu article{
   display: flex;
   align-items: flex-start;
+  margin-bottom: 40px;
 }
 
-.menu img{
-  width: 200px;
+.menu .content{
+  margin-left: 20px;
 }
 
 /* newsletter */
@@ -163,6 +166,7 @@ footer small{
 
   .menu article{
     width: 48.75%;
+    margin-bottom: 0;
   }
 
   .newsletter .inner{
