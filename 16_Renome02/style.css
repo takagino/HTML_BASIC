@@ -22,6 +22,22 @@ img{
   margin-right: auto;
 }
 
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  margin-left: 20px;
+}
+
 /* PC表示（640px） */
 @media (min-width:640px){
 
