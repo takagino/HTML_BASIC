@@ -46,6 +46,22 @@ header li{
   color: #fff;
 }
 
+/* content */
+.content{
+  margin-bottom: 100px;
+}
+
+/* footer */
+footer{
+  padding: 40px 0;
+  background-color: #EDEFF2;
+  text-align: center;
+}
+
+footer small{
+  display: block;
+}
+
 /* PC表示（640px） */
 @media (min-width:640px){
   .content{
