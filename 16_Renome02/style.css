@@ -14,6 +14,14 @@ img{
   vertical-align: bottom;
 }
 
+/* ブラウザの中央にコンテンツを持ってくるためのクラス */
+.inner{
+  max-width: 1200px; /* PCデザインのガイドからガイドまで */
+  width: 87.5%; /* スマホデザインの内容の横幅 / スマホデザインのアートボードの横幅 * 100 % */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* PC表示（640px） */
 @media (min-width:640px){
 
