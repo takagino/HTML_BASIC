@@ -38,7 +38,28 @@ header li{
   margin-left: 20px;
 }
 
+/* about */
+.about{
+  margin-bottom: 100px;
+  padding: 400px 0 100px;
+  background: url(./images/pic_main.png) no-repeat center center / cover;
+  color: #fff;
+}
+
 /* PC表示（640px） */
 @media (min-width:640px){
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .services{
+    width: 58.3%;
+    background-color: #ddd;
+  }
+
+  .side{
+    width: 33.3%;
+    background-color: #300;
+  }
 }
