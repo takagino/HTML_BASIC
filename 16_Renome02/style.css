@@ -1,1 +1,20 @@
 @charset "utf-8";
+
+body{
+  color: #404040;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* PC表示（640px） */
+@media (min-width:640px){
+
+}
