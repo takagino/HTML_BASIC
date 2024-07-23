@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+body {
+  color: #5a5a5a;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.inner {
+  max-width: 1140px;
+  width: 90.625%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(10, 4, 4, 0.8);
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: none;
+}
+
+header .fa-bars {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* about */
+.about {
+  margin-bottom: 120px;
+  padding: 220px 0 160px;
+  background: url(./images/bg_mainvisual.jpg) no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.about p{
+  transition: .3s;
+}
+
+.about p:hover{
+  transform: rotate(180deg);
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  margin-top: 60px;
+  padding: 15px;
+  /* border-radius: 25px; */
+  background-color: #ed145b;
+  font-weight: bold;
+  line-height: 1;
+  /*transition: background-color 0.5s, color 0.5s;*/
+  transition: .3s;
+  transform-origin: bottom center; /* 変形の基準点を変える */
+  animation: updown 1s infinite alternate;
+}
+
+.btn span{
+  display: block;
+  transform: skewX(-10deg);
+}
+
+.btn:hover{
+  color: #ed145b;
+  background-color: #fff;
+  transform: scale(1.1);
+  /* transition: .3s; */
+}
+
+.btn::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 75px;
+  border: 25px solid transparent;
+  border-bottom-color: #ed145b;
+  transition: .3s;
+  /* animation: updown 1s infinite alternate; */
+}
+
+@keyframes updown{
+  0%{
+    transform: scale(1);
+  }
+
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+.btn:hover::before{
+  border-bottom-color: #fff;
+}
+
+/* updates */
+.updates{
+  margin-bottom: 120px;
+}
+
+.updates article{
+  margin-bottom: 60px;
+  background-color: #f4f4f4;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.updates .content{
+  padding: 30px;
+}
+
+.pic{
+  position: relative;
+  overflow: hidden; /* 要素からはみ出た部分を隠す */
+}
+
+.hot::before{
+  content: "HOT";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #ed145b;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  /* transform: translateX(100px) skewX(20deg) scale(2); */
+  /* transform: skewX(20deg); degree(度) */
+  animation: move 1.5s 5s ease-in infinite alternate;
+}
+
+@keyframes move{
+  0%{
+    background-color: #ed145b;
+    transform: translateX(0);
+  }
+
+  100%{
+    background-color: #5a5a5a;
+    transform: translateX(100px);
+  }
+}
+
+.pic::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 97%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 20, 91, .8);
+  transition: .3s;
+  transform: skewY(1deg);
+}
+
+.pic:hover::after{
+  top: 0;
+  transform: skewY(0);
+}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  color: #898989;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.inner{
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  text-align: center;
+}
+
+footer{
+  background-color: #000;
+}
+
+.news{
+  background-color: #FFFBEB;
+}

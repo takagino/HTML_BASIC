@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+body{
+  color: #5a5a5a;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h2{
+  margin-bottom: 40px;
+  color: #2B2B2B;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.inner{
+  max-width: 1140px;
+  width: 90.625%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn{
+  display: inline-block;
+  width: 200px;
+  margin-top: 70px;
+  padding: 15px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  background-color: #ED145B;
+}
+
+/* header */
+header{
+  z-index: 999;
+  position: fixed;
+  width: 100%; /* absoluteとfixedは要素を一旦取り除くので、親要素の幅ではなくなってしまう。自分で設定する必要がある */
+  padding: 25px 0;
+  background-color: rgba(43, 43, 43, 0.8);
+  /* opacity: 0.8; 要素全てを透明にする */
+}
+
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  display: none;
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  margin-left: 20px;
+}
+
+header a{
+  color: #fff;
+  font-weight: bold;
+}
+
+header .active{
+  color: #ED145B;
+}
+
+/* about */
+.about{
+  padding: 280px 0 180px;
+  background: url(./images/bg_mainvisual.jpg) no-repeat center / cover;
+  color: #fff;
+}
+
+.about h2{
+  color: #fff;
+  font-size: 46px;
+}
+
+.about span{
+  color: #ED145B;
+}
+
+
+
+/* free */
+.free{
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.free .pic{
+  margin-bottom: 60px;
+}
+
+/* updates */
+.updates{
+  margin: 100px auto;
+}
+
+.updates article{
+  margin-top: 40px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+.updates h3{
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.updates .text{
+  padding: 25px 20px 35px;
+}
+
+.updates .hot{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+/* footer */
+footer{
+  padding: 60px 0 160px;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* PC表示（640px以上） */
+@media (min-width:640px){
+  header{
+    padding: 40px 0;
+  }
+
+  nav{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .about{
+    text-align: center;
+  }
+
+  .free .inner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .free .contents{
+    width: 41.2%;
+  }
+
+  .free .pic{
+    width: 50.9%;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+
+  .free img{
+    position: relative;
+    right: 25px;
+    bottom: 25px;
+  }
+
+  .updates h2{
+    text-align: center;
+  }
+
+  .updates .allpost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .updates article{
+    width: 31.6%;
+  }
+}

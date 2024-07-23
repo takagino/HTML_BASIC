@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #000;
+  background: #f0f0f0;
+}
+
+header{
+  margin: 50px 0;
+}
+
+h1{
+  line-height: 1;
+}
+
+h2{
+  margin: 0 0 40px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+footer{
+  min-width: 900px; /* 背景色が消えちゃう問題を解決する*/
+  padding: 60px 0;
+  background: #000;
+  color: #fff;
+  text-align: right;
+}
+
+footer p{
+  margin: 0;
+}
+
+.inner{
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainvisual{
+  margin-bottom: 100px;
+}
+
+.rooms{
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.rooms ul{
+  margin-top: 60px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.rooms li{
+  margin-bottom: 15px;
+  padding: 2px 0 2px 36px;
+  background-image: url(./images/ico_check.png);
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.testimonials{
+  margin-bottom: 100px;
+  padding: 50px;
+  text-align: center;
+  /*
+  background-image: url(./images/bg_logo.png);
+  background-repeat: no-repeat;
+  background-position: right 35px bottom 35px; */
+  background: #fff url(./images/bg_logo.png) no-repeat right 35px bottom 35px;
+}
+
+.voice{
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-style: italic;
+}

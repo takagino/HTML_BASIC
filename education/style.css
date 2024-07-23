@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.post{
+  background: #ddd;
+}
+
+.text{
+  padding: 40px;
+}
+
+h3{
+  margin-top: 0;
+}

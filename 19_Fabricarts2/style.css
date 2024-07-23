@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+body {
+  color: #000;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h2 {
+  margin-bottom: 60px;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2::before {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid #e40065;
+}
+
+::selection {
+  background-color: #eebbd2;
+}
+
+.inner {
+  max-width: 1170px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+header {
+  position: fixed; /* 固定配置 */
+  top: 0; /* 左上に固定 */
+  left: 0;
+  z-index: 999; /* どの要素よりも前に表示するために適当に大きな値を設定 */
+  width: 100%; /* 内容の幅になってしまうので、自分で調整する */
+  padding: 35px 0;
+  background-color: rgba(255, 255, 255, 0.85); /* 背景色を透明に */
+}
+
+header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 30px;
+}
+
+header a {
+  font-size: 12px;
+}
+
+header a:hover,
+header .active {
+  color: #e40065;
+}
+
+/* main */
+main {
+  padding-top: 180px;
+}
+
+/* news */
+.news {
+  max-width: 600px;
+  /* width: 51.3%; */
+  margin: 0 auto 100px;
+}
+
+.news h2::before {
+  content: "NEWS";
+}
+
+.news .item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.news .item:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+.news dt {
+  width: 80px; /* 改行されないようにデザインデータの値よりも余裕も持たせる */
+  margin-right: 45px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.news dt::first-letter {
+  font-size: 50px;
+  padding-right: 10px;
+}
+
+.news dd {
+  flex: 1; /* 固定幅の隣にいい感じで収める */
+}
+
+/* works */
+.works{
+  margin-bottom: 100px;
+}
+
+.works .allpost{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works article{
+  width: 47.86%;
+}
+
+.works .pic{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.new::after{
+  content: "NEW";
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  background-color: #e40065;
+}
+
+/* voice */
+.voice{
+  margin-bottom: 100px;
+}
+
+.voice .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.voice .item:nth-child(2n){
+  flex-direction: row-reverse;
+}
+
+.voice img{
+  width: 34.2%;
+}
+
+.voice p{
+  position: relative;
+  width: 59.8%;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: #f7f7f7;
+}
+
+.voice p::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 15px solid transparent;
+  border-right-color: #f7f7f7;
+}
+
+.voice .item:nth-child(2n) p::after{
+  border-right-color: transparent;
+  border-left-color: #f7f7f7;
+  right: -30px;
+  left: auto; /* 値を無しにしたい場合は初期値を設定する */
+}
+
+/* footer */
+footer{
+  padding: 80px 0;
+  background-color: #2F2F2F;
+  color: #fff;
+  text-align: center;
+}
+
+footer small{
+  font-size: 12px;
+}

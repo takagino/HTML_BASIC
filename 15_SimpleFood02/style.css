@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+body{
+  color: #707070;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 2;
+  letter-spacing: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h2{
+  margin-bottom: 20px;
+  color: #303030;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.inner{
+  max-width: 800px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 80px;
+}
+
+header h1{
+  width: 164px;
+}
+
+header nav{
+  flex: 1;
+  margin-left: 40px
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  margin-right: 40px;
+}
+
+.contact{
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* footer */
+footer{
+  padding: 80px 0 60px;
+}
+
+footer small{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* news */
+.news{
+  margin-bottom: 80px;
+}
+
+.news p{
+  margin-bottom: 30px;
+}
+
+.news a{
+  display: block;
+  width: 45%; /* 固定幅の場合は250px */
+  margin-left: auto;
+  padding: 20px;
+  background-color: #FFBF9D;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+/* menu */
+.menu{
+  margin-bottom: 80px;
+}
+
+.menu article{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.menu .content{
+  margin-left: 20px;
+}
+
+/* newsletter */
+.newsletter{
+  padding: 60px 0;
+  background-color: #FDF5ED;
+}
+
+.newsletter dl{
+  margin-bottom: -15px;
+}
+
+.item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.item dt{
+  width: 100px;
+  margin-right: 15px;
+  padding: 5px 0;
+  background-color: #303030;
+  color: #fff;
+  text-align: center;
+}
+
+.item dd{
+  padding: 5px 0;
+  flex: 1; /* パターンとして覚える */
+  word-break: break-all; /* 単語の途中で改行する */
+}
+
+/* 専用のクラス名を追加するのもあり */
+.word-break{
+  word-break: break-all;
+}
+
+/* PC表示（640px以上） */
+@media (min-width:640px){
+  .allpost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+
+  .news article{
+    width: 31.25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news a{
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .menu article{
+    width: 48.75%;
+    margin-bottom: 0;
+  }
+
+  .newsletter .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsletter .text{
+    width: 62%;
+    /* margin-right: 3.625%; */
+    padding-right: 3.625%;
+    border-right: 1px solid #707070;
+  }
+
+  .newsletter dl{
+    width: 34.375%;
+  }
+}
