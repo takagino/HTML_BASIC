@@ -200,3 +200,14 @@ header .fa-bars {
   top: 0;
   transform: skewY(0);
 }
+
+@media (min-width: 640px) {
+  .updates .postall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .updates article {
+    width: 31.58%;
+  }
+}
