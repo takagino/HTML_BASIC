@@ -203,11 +203,19 @@ header .fa-bars {
 
 @media (min-width: 640px) {
   .updates .postall {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 30px;
+    row-gap: 30px; */
+    gap: 30px;
   }
   .updates article {
-    width: 31.58%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .updates .postall {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
